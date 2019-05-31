@@ -30,18 +30,8 @@ public class PetrolCar extends AbstractCar {
     @Override
     public String toString() {
         return "PetrolCar{" +
-                "mark=" + mark +
-                ", model='" + model + '\'' +
-                ", bodyType=" + bodyType +
-                ", price=" + price +
-                ", year=" + year +
-                ", milage=" + milage +
-                ", maxSpeed=" + maxSpeed +
-                ", automat=" + automat +
-                ", acceleration=" + acceleration +
-                ", numberOfSeats=" + numberOfSeats +
-                ", conditioner=" + conditioner +
-                ", fuelType=" + fuelType +
+                super.toString() +
+                "fuelType=" + fuelType +
                 ", fuelTankCapacity=" + fuelTankCapacity +
                 ", fuelConsumption=" + fuelConsumption +
                 '}';

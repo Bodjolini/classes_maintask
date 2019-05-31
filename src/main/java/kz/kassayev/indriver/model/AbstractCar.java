@@ -5,17 +5,17 @@ package kz.kassayev.indriver.model;
  * variables make protected that heirs could only use
  */
 public abstract class AbstractCar {
-    protected Mark mark;
-    protected String model;
-    protected BodyType bodyType;
-    protected int price;
-    protected int year;
-    protected int milage;
-    protected int maxSpeed;
-    protected boolean automat;
-    protected double acceleration;
-    protected int numberOfSeats;
-    protected boolean conditioner;
+    private Mark mark;
+    private String model;
+    private BodyType bodyType;
+    private int price;
+    private int year;
+    private int milage;
+    private int maxSpeed;
+    private boolean automat;
+    private double acceleration;
+    private int numberOfSeats;
+    private boolean conditioner;
 
     public AbstractCar(Mark mark, String model, BodyType bodyType, int price, int year, int milage, int maxSpeed, boolean automat, double acceleration, int numberOfSeats, boolean conditioner) {
         this.mark = mark;
@@ -77,8 +77,7 @@ public abstract class AbstractCar {
 
     @Override
     public String toString() {
-        return "AbstractCar{" +
-                "mark=" + mark +
+        return "mark=" + mark +
                 ", model='" + model + '\'' +
                 ", bodyType=" + bodyType +
                 ", price=" + price +

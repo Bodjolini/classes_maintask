@@ -30,18 +30,8 @@ public class ElectricCar extends AbstractCar {
     @Override
     public String toString() {
         return "ElectricCar{" +
-                "mark=" + mark +
-                ", model='" + model + '\'' +
-                ", bodyType=" + bodyType +
-                ", price=" + price +
-                ", year=" + year +
-                ", milage=" + milage +
-                ", maxSpeed=" + maxSpeed +
-                ", automat=" + automat +
-                ", acceleration=" + acceleration +
-                ", numberOfSeats=" + numberOfSeats +
-                ", conditioner=" + conditioner +
-                ", batteryType=" + batteryType +
+                super.toString() +
+                "batteryType=" + batteryType +
                 ", chargingTime=" + chargingTime +
                 ", lifeTimeOfBattery=" + lifeTimeOfBattery +
                 '}';

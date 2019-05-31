@@ -1,4 +1,4 @@
-package kz.kassayev.indriver.park;
+package kz.kassayev.indriver.action;
 
 import kz.kassayev.indriver.model.AbstractCar;
 import kz.kassayev.indriver.model.ElectricCar;
@@ -8,14 +8,14 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class Handler {
-
+public class HandlerImpl implements Handler {
     /**
      * This class can show all taxi cars for user
      *
      * @param cars
      * @return list of cars
      */
+    @Override
     public List<AbstractCar> showAllCars(List<AbstractCar> cars) {
         List<AbstractCar> selectAll = new ArrayList<>();
         for (AbstractCar car : cars) {
@@ -30,7 +30,8 @@ public class Handler {
      * @param cars
      * @return total amount price
      */
-    public int allCarsCost(List<AbstractCar> cars) {
+    @Override
+    public int priceOfAllCars(List<AbstractCar> cars) {
         int sum = 0;
         for (AbstractCar car : cars) {
             sum += car.getPrice();
@@ -46,7 +47,8 @@ public class Handler {
      * @param max
      * @return get list of cars, which this speed range
      */
-    public List<AbstractCar> showBySpeedRange(List<AbstractCar> cars, int min, int max) {
+    @Override
+    public List<AbstractCar> searchBySpeedRange(List<AbstractCar> cars, int min, int max) {
         List<AbstractCar> carSelection = new ArrayList<>();
         for (AbstractCar car : cars) {
             if (car.getMaxSpeed() >= min && car.getMaxSpeed() <= max) {
@@ -63,6 +65,7 @@ public class Handler {
      * @param cars
      * @return get sorted list
      */
+    @Override
     public List<AbstractCar> sortyByFuelEconomy(List<AbstractCar> cars) {
         List<PetrolCar> petrolCars = new ArrayList<>();
         List<ElectricCar> electricCars = new ArrayList<>();
