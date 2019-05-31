@@ -3,6 +3,7 @@ package kz.kassayev.indriver.park;
 import kz.kassayev.indriver.model.AbstractCar;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -25,6 +26,6 @@ public class TaxiPark {
     }
 
     public List<AbstractCar> getTaxipark() {
-        return taxipark;
+        return Collections.unmodifiableList(taxipark);
     }
 }

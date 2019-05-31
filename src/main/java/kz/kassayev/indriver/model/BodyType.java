@@ -7,5 +7,5 @@ public enum BodyType {
     COUPE,
     VAN,
     SUV,
-    BUS;
+    BUS
 }

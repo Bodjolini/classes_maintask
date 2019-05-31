@@ -25,5 +25,5 @@ public enum Mark {
     SUBARU,
     TOYOTA,
     TESLA,
-    VOLSWAGEN;
+    VOLSWAGEN
 }
