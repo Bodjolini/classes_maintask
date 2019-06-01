@@ -17,10 +17,15 @@ public class SearchBySpeedRangeImpl implements SeachBySpeedRange {
     @Override
     public List<AbstractCar> searchBySpeedRange(List<AbstractCar> cars, int min, int max) {
         List<AbstractCar> carSelection = new ArrayList<>();
+        boolean speed = false;
         for (AbstractCar car : cars) {
             if (car.getMaxSpeed() >= min && car.getMaxSpeed() <= max) {
+                speed = true;
                 carSelection.add(car);
             }
+        }
+        if (!speed){
+            System.out.println("CARS IN THIS RANGE NO");
         }
         return carSelection;
     }
