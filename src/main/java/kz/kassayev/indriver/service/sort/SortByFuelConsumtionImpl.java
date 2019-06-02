@@ -10,7 +10,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class SortByFuelConsumtionImpl implements SortByFuelConsumtion {
-    final static Logger logger = Logger.getLogger(SortByFuelConsumtionImpl.class);
+    private final static Logger logger = Logger.getLogger(SortByFuelConsumtionImpl.class);
 
     /**
      * At first determines class instance, then assign.

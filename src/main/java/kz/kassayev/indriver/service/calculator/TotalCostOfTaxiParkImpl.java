@@ -7,7 +7,7 @@ import org.apache.log4j.Logger;
 import java.util.List;
 
 public class TotalCostOfTaxiParkImpl implements TotalCostOfTaxiPark {
-    final static Logger logger = Logger.getLogger(TotalCostOfTaxiParkImpl.class);
+    private final static Logger logger = Logger.getLogger(TotalCostOfTaxiParkImpl.class);
 
     /**
      * This class calculate price of cars in taxi park

@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.List;
 
 public class CarReportImpl implements CarReport {
-    final static Logger logger = Logger.getLogger(CarReportImpl.class);
+    private final static Logger logger = Logger.getLogger(CarReportImpl.class);
     /**
      * this method is not to write the loop again
      *

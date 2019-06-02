@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Controller {
-    final static Logger logger = Logger.getLogger(Controller.class);
+    private final static Logger logger = Logger.getLogger(Controller.class);
     private List<AbstractCar> carList;
     private Scanner input;
     SortByFuelConsumtion sortByFuelConsumtion = new SortByFuelConsumtionImpl();

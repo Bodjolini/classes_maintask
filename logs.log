@@ -65,3 +65,23 @@
 2019-06-03 01:49:01 INFO  CarReportImpl:20 - Cycle for sout got list
 2019-06-03 01:49:05 INFO  Controller:34 - opening menu
 2019-06-03 01:49:07 INFO  Controller:107 - exit menu
+2019-06-03 01:52:22 INFO  Controller:34 - opening menu
+2019-06-03 01:52:24 INFO  Controller:107 - exit menu
+2019-06-03 01:53:58 INFO  Controller:34 - opening menu
+2019-06-03 01:54:11 INFO  CarReportImpl:20 - Cycle for sout got list
+2019-06-03 01:54:16 INFO  Controller:34 - opening menu
+2019-06-03 01:54:18 INFO  SortByFuelConsumtionImpl:36 - sorting begins...
+2019-06-03 01:54:18 INFO  CarReportImpl:20 - Cycle for sout got list
+2019-06-03 01:54:22 INFO  Controller:34 - opening menu
+2019-06-03 01:54:26 INFO  Controller:107 - exit menu
+2019-06-03 02:09:32 INFO  Controller:34 - opening menu
+2019-06-03 02:09:54 INFO  Controller:107 - exit menu
+2019-06-03 02:13:31 INFO  Controller:34 - opening menu
+2019-06-03 02:13:33 INFO  CarReportImpl:20 - Cycle for sout got list
+2019-06-03 02:13:36 INFO  Controller:34 - opening menu
+2019-06-03 02:13:38 INFO  SortByFuelConsumtionImpl:36 - sorting begins...
+2019-06-03 02:13:39 INFO  CarReportImpl:20 - Cycle for sout got list
+2019-06-03 02:13:41 INFO  Controller:34 - opening menu
+2019-06-03 02:13:44 INFO  TotalCostOfTaxiParkImpl:22 - calculate price of all cars
+2019-06-03 02:13:49 INFO  Controller:34 - opening menu
+2019-06-03 02:13:51 INFO  Controller:107 - exit menu
