@@ -1,6 +1,7 @@
 package kz.kassayev.indriver.park;
 
 import kz.kassayev.indriver.model.AbstractCar;
+import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.Collections;

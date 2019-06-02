@@ -1,5 +1,6 @@
 package kz.kassayev.indriver.service.search;
 
+import kz.kassayev.indriver.exception.ThereIsNoSuchSpeedRange;
 import kz.kassayev.indriver.model.AbstractCar;
 
 import java.util.ArrayList;
@@ -15,17 +16,18 @@ public class SearchBySpeedRangeImpl implements SeachBySpeedRange {
      * @return get list of cars, which this speed range
      */
     @Override
-    public List<AbstractCar> searchBySpeedRange(List<AbstractCar> cars, int min, int max) {
+    public List<AbstractCar> searchBySpeedRange(List<AbstractCar> cars, int min, int max) throws ThereIsNoSuchSpeedRange {
         List<AbstractCar> carSelection = new ArrayList<>();
-        boolean speed = false;
+
+        boolean speedAviable = false;
         for (AbstractCar car : cars) {
             if (car.getMaxSpeed() >= min && car.getMaxSpeed() <= max) {
-                speed = true;
+                speedAviable = true;
                 carSelection.add(car);
             }
         }
-        if (!speed){
-            System.out.println("CARS IN THIS RANGE NO");
+        if (!speedAviable) {
+            throw new ThereIsNoSuchSpeedRange("there is no such speed range : " + min + " - " + max);
         }
         return carSelection;
     }

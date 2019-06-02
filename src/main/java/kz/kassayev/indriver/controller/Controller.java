@@ -1,22 +1,26 @@
 package kz.kassayev.indriver.controller;
 
+import kz.kassayev.indriver.exception.ListIsEmptyException;
+import kz.kassayev.indriver.exception.ThereIsNoSuchSpeedRange;
 import kz.kassayev.indriver.model.AbstractCar;
 import kz.kassayev.indriver.report.CarReport;
 import kz.kassayev.indriver.report.CarReportImpl;
 import kz.kassayev.indriver.service.calculator.TotalCostOfTaxiPark;
 import kz.kassayev.indriver.service.calculator.TotalCostOfTaxiParkImpl;
-import kz.kassayev.indriver.service.impl.Sort;
-import kz.kassayev.indriver.service.impl.SortImpl;
+import kz.kassayev.indriver.service.sort.SortByFuelConsumtion;
+import kz.kassayev.indriver.service.sort.SortByFuelConsumtionImpl;
 import kz.kassayev.indriver.service.search.SeachBySpeedRange;
 import kz.kassayev.indriver.service.search.SearchBySpeedRangeImpl;
+import org.apache.log4j.Logger;
 
 import java.util.List;
 import java.util.Scanner;
 
 public class Controller {
+    final static Logger logger = Logger.getLogger(Controller.class);
     private List<AbstractCar> carList;
     private Scanner input;
-    Sort sort = new SortImpl();
+    SortByFuelConsumtion sortByFuelConsumtion = new SortByFuelConsumtionImpl();
     TotalCostOfTaxiPark totalCostOfTaxiPark = new TotalCostOfTaxiParkImpl();
     SeachBySpeedRange seachBySpeedRange = new SearchBySpeedRangeImpl();
     CarReport carReport = new CarReportImpl();
@@ -26,7 +30,8 @@ public class Controller {
         this.input = input;
     }
 
-    public void categoiresOfMenu(){
+    public void categoriesOfMenu() {
+        logger.info("opening menu");
         System.out.println("[---------MENU----------]");
         System.out.println("[--CHOOSE BY NUMBERING--]");
         System.out.println("[1] LOOK AT ALL THE CARS");
@@ -36,45 +41,70 @@ public class Controller {
         System.out.println("[5] EXIT");
     }
 
-    private void massageAboutBackToMenu(){
+    private void massageAboutBackToMenu() {
         System.out.println("PRESS 0 BACK IN THE MENU");
     }
-    public void menu(){
+
+    public void menu() {
         int selection;
-
         do {
-
             selection = input.nextInt();
             switch (selection) {
                 case 0:
-                    categoiresOfMenu();
+                    categoriesOfMenu();
                     break;
                 case 1:
-                    carReport.cycleForSout(carList);
-                    massageAboutBackToMenu();
+                    try {
+                        carReport.cycleForSout(carList);
+                    } catch (ListIsEmptyException e) {
+                        logger.error(e);
+                    } finally {
+                        massageAboutBackToMenu();
+                    }
                     break;
                 case 2:
-                    System.out.println("TOTAL AMOUNT PRICE OF ALL TAXI-CARS : " + totalCostOfTaxiPark.priceOfAllCars(carList) + "$");
-                    massageAboutBackToMenu();
+                    try {
+                        System.out.println("TOTAL AMOUNT PRICE OF ALL TAXI-CARS : " + totalCostOfTaxiPark.priceOfAllCars(carList) + "$");
+                    } catch (ListIsEmptyException e) {
+                        logger.error(e);
+                    } finally {
+                        massageAboutBackToMenu();
+                    }
                     break;
                 case 3:
                     System.out.println("SPEED RANGE SELECTION : ");
-                    System.out.println("Enter min sped");
+                    System.out.println("Enter min speed");
                     int min = input.nextInt();
-                    System.out.println("Enter max sped");
+                    System.out.println("Enter max speed");
                     int max = input.nextInt();
-                    List<AbstractCar> carbySpeed = seachBySpeedRange.searchBySpeedRange(carList, min, max);
-                    carReport.cycleForSout(carbySpeed);
-                    massageAboutBackToMenu();
+
+                    try {
+                        List<AbstractCar> carbySpeed = seachBySpeedRange.searchBySpeedRange(carList, min, max);
+                        try {
+                            carReport.cycleForSout(carbySpeed);
+                        } catch (ListIsEmptyException e) {
+                            logger.error(e);
+                        }
+                    } catch (ThereIsNoSuchSpeedRange e) {
+                        logger.warn(e);
+                    } finally {
+                        massageAboutBackToMenu();
+                    }
                     break;
                 case 4:
-                    System.out.println("SORT CARS BY ECONOMY (AT FIRST ELECTRIC, THEN PETROL) : ");
-                    List<AbstractCar> carbyEconomy = sort.sortyByFuelEconomy(carList);
-                    carReport.cycleForSout(carbyEconomy);
-                    massageAboutBackToMenu();
+                    try {
+                        System.out.println("SORT CARS BY ECONOMY (AT FIRST ELECTRIC, THEN PETROL) : ");
+                        List<AbstractCar> carbyEconomy = sortByFuelConsumtion.sortByFuelEconomy(carList);
+                        carReport.cycleForSout(carbyEconomy);
+                    } catch (ListIsEmptyException e) {
+                        logger.error(e);
+                    } finally {
+                        massageAboutBackToMenu();
+                    }
                     break;
                 case 5:
                     System.out.println("[----------BYE----------]");
+                    logger.info("exit menu");
                     break;
                 default:
                     System.out.println("INVALID, PLEASE REPEAT");

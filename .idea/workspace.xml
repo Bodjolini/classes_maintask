@@ -2,11 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aeb816a-8e64-4145-8f2d-a702245df8b6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/sort/SortByFuelConsumtion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/park/TaxiPark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/park/TaxiPark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/report/CarReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/report/CarReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/report/CarReportImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/report/CarReportImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/calculator/TotalCostOfTaxiPark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/calculator/TotalCostOfTaxiPark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/calculator/TotalCostOfTaxiParkImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/calculator/TotalCostOfTaxiParkImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/impl/Sort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/impl/SortImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/sort/SortByFuelConsumtionImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/search/SeachBySpeedRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/search/SeachBySpeedRange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/search/SearchBySpeedRangeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/search/SearchBySpeedRangeImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/park/TaxiPark.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/park/TaxiPark.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/report/CarReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/report/CarReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/report/CarReportImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/report/CarReportImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/service/calculator/TotalCostOfTaxiPark.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/service/calculator/TotalCostOfTaxiPark.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/service/calculator/TotalCostOfTaxiParkImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/service/calculator/TotalCostOfTaxiParkImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/service/impl/Sort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/service/impl/SortImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/service/search/SeachBySpeedRange.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/service/search/SeachBySpeedRange.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/service/search/SearchBySpeedRangeImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/kassayev/indriver/service/search/SearchBySpeedRangeImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,34 +43,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/search/SearchBySpeedRangeImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+            <state relative-caret-position="468">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/kz/kassayev/indriver/MainTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -59,12 +57,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1203">
-              <caret line="82" column="31" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+            <state relative-caret-position="105">
+              <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1531#1532#0" expanded="true" />
-                <element signature="e#1593#1594#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/exception/ListIsEmptyException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+              <folding>
+                <element signature="e#186#187#0" expanded="true" />
+                <element signature="e#216#217#0" expanded="true" />
+                <element signature="e#284#285#0" expanded="true" />
+                <element signature="e#321#322#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#401#402#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/park/TaxiPark.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,56 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/report/CarReport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/search/SeachBySpeedRange.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="83" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/search/SearchBySpeedRangeImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/calculator/TotalCostOfTaxiPark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/impl/SortImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            <state relative-caret-position="144">
+              <caret line="8" column="73" selection-start-line="8" selection-start-column="73" selection-end-line="8" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,8 +110,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/report/CarReportImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="72">
+              <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="10" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/calculator/TotalCostOfTaxiPark.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="74" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/calculator/TotalCostOfTaxiParkImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="9" column="81" selection-start-line="9" selection-start-column="81" selection-end-line="9" selection-end-column="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/sort/SortByFuelConsumtionImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,15 +180,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/park/TaxiPark.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/model/FuelType.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/model/BodyType.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/model/Mark.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/report/CarReport.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/model/ElectricCar.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/model/PetrolCar.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/model/AbstractCar.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/report/CarReportImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/sort/Sort.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/sort/SortImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/park/Handler.java" />
@@ -172,16 +194,30 @@
         <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/action/calculator/TotalCostOfTaxiPark.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/action/api/Handler.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/action/impl/HandlerImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/calculator/TotalCostOfTaxiParkImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/search/SeachBySpeedRange.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/impl/Handler.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/impl/HandlerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/impl/SortImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/search/SearchBySpeedRangeImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/kz/kassayev/indriver/MainTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/impl/Sort.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/test/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/exception/ListIsEmptyException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/report/CarReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/valid/SpeedExtremumValid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/valid/SpeedRangeValid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/park/TaxiPark.java" />
+        <option value="$PROJECT_DIR$/logs.log" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/exception/ThereIsNoSuchSpeedRange.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/search/SeachBySpeedRange.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/report/CarReportImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/calculator/TotalCostOfTaxiPark.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/sorter/SortImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/search/SearchBySpeedRangeImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/sort/SortByFuelConsumtionImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/calculator/TotalCostOfTaxiParkImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/Main.java" />
       </list>
     </option>
   </component>
@@ -189,8 +225,8 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="423" />
-    <option name="y" value="379" />
+    <option name="x" value="760" />
+    <option name="y" value="27" />
     <option name="width" value="917" />
     <option name="height" value="789" />
   </component>
@@ -253,6 +289,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="indriver" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="indriver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="indriver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="indriver" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -300,7 +345,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="indriver" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="indriver" type="b2602c69:ProjectViewProjectNode" />
@@ -310,7 +355,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="indriver" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="indriver" type="b2602c69:ProjectViewProjectNode" />
@@ -328,10 +373,7 @@
             <path>
               <item name="indriver" type="b2602c69:ProjectViewProjectNode" />
               <item name="indriver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="indriver" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -343,7 +385,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/gittan/EpamCourses" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -357,6 +399,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="kz.kassayev.indriver.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -390,12 +435,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559291626728</updated>
-      <workItem from="1559291631300" duration="19329000" />
+      <workItem from="1559291631300" duration="39304000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19329000" />
+    <option name="totallyTimeSpent" value="39304000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -411,13 +456,13 @@
       <window_info anchor="bottom" id="Messages" weight="0.32937366" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32937366" />
       <window_info anchor="bottom" id="Terminal" weight="0.32937366" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30561554" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -448,7 +493,7 @@
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
       <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.30561554" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
@@ -474,13 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/model/FuelType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/model/BodyType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -492,13 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/model/PetrolCar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -547,13 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/model/ElectricCar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/action/sort/Sort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -583,16 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/park/TaxiPark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/model/controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -600,57 +614,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/impl/Sort.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/kz/kassayev/indriver/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state relative-caret-position="252">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/calculator/TotalCostOfTaxiParkImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/model/ElectricCar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="468">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/kz/kassayev/indriver/Main.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#616#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/calculator/TotalCostOfTaxiPark.java">
+    <entry file="file://$PROJECT_DIR$/target/classes/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/kz/kassayev/indriver/service/impl/Sort.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state>
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#312#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/report/CarReportImpl.java">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="1286" selection-start-line="1286" selection-end-line="1286" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/model/FuelType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/model/PetrolCar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/valid/SpeedRangeValid.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/exception/ThereIsNoSuchSpeedRange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+          <folding>
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/search/SeachBySpeedRange.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="83" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
+        <state relative-caret-position="144">
+          <caret line="8" column="113" selection-start-line="8" selection-start-column="113" selection-end-line="8" selection-end-column="113" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/search/SearchBySpeedRangeImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/sort/SortByFuelConsumtion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+        <state relative-caret-position="126">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -659,18 +748,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/report/CarReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        <state relative-caret-position="144">
+          <caret line="8" column="73" selection-start-line="8" selection-start-column="73" selection-end-line="8" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/impl/SortImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/calculator/TotalCostOfTaxiPark.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        <state relative-caret-position="144">
+          <caret line="8" column="74" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/exception/ListIsEmptyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <folding>
+            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/report/CarReportImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="10" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/calculator/TotalCostOfTaxiParkImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="9" column="81" selection-start-line="9" selection-start-column="81" selection-end-line="9" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/search/SearchBySpeedRangeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/park/TaxiPark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -679,37 +830,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1203">
-          <caret line="82" column="31" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-            <element signature="e#1593#1594#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+        <state relative-caret-position="105">
+          <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kz/kassayev/indriver/service/sort/SortByFuelConsumtionImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/kz/kassayev/indriver/MainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="195">
+          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
